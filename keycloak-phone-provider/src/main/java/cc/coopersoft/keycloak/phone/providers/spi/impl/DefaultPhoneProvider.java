@@ -3,6 +3,8 @@ package cc.coopersoft.keycloak.phone.providers.spi.impl;
 import cc.coopersoft.common.OptionalUtils;
 import cc.coopersoft.keycloak.phone.providers.spi.PhoneProvider;
 import cc.coopersoft.keycloak.phone.providers.spi.PhoneVerificationCodeProvider;
+import jakarta.ws.rs.ForbiddenException;
+import jakarta.ws.rs.ServiceUnavailableException;
 import cc.coopersoft.keycloak.phone.providers.constants.TokenCodeType;
 import cc.coopersoft.keycloak.phone.providers.exception.MessageSendException;
 import cc.coopersoft.keycloak.phone.providers.representations.TokenCodeRepresentation;
@@ -12,8 +14,6 @@ import org.keycloak.Config.Scope;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.services.validation.Validation;
 
-import javax.ws.rs.ForbiddenException;
-import javax.ws.rs.ServiceUnavailableException;
 import java.time.Instant;
 import java.util.Optional;
 
