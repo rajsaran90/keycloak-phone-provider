@@ -91,7 +91,7 @@ public class Utils {
     * international canonical form
     *
     */
-    public static String canonicalizePhoneNumber(KeycloakSession session, String phoneNumber) throws PhoneNumberInvalidException {
+    public static String canonicalizePhoneNumber(KeycloakSession session,@NotNull String phoneNumber) throws PhoneNumberInvalidException {
         var provider = session.getProvider(PhoneProvider.class);
 
 
