@@ -98,6 +98,10 @@
                                 </#if>
 
                             </div>
+							<div>
+                                <input type="checkbox">
+                                <label for="term&Conditions"> I agree to galaxy's  <a href="#">Conditions of Use</a>  and <a href="#">Privacy Notice .</a></label><br>
+                            </div>
 
 
                             <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
